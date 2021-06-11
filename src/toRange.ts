@@ -1,11 +1,10 @@
 interface Params {
-   from: number;
    to: number;
    fn: (index: number) => void;
 }
 
 /**
- * @description Loops through 0 to given value, given value is not included, last is not included.
+ * @description Loops through 0 to given value, given value is included, last is not included.
  * @example to: 20 -> 0, 1, 2, 3 ...... 19
  *
  * @param to End of range, to is not included
