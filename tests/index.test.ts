@@ -1,4 +1,4 @@
-import { usePromise, inRange } from '../src/index';
+import { usePromise, inRange, toRange } from '../src/index';
 import {
    testPromise,
    testPromiseResolveValue,
@@ -23,6 +23,16 @@ describe('Tests to test all function', () => {
    it('should push indexes in range to an array', () => {
       const array: number[] = [];
       inRange(0, 20, index => {
+         array.push(index);
+      });
+      expect(array[0]).toEqual(0);
+      expect(array[array.length - 1]).toEqual(19);
+      expect(array.length).toEqual(20);
+   });
+
+   it('should loop from 0 to given value', () => {
+      const array: number[] = [];
+      toRange(20, index => {
          array.push(index);
       });
       expect(array[0]).toEqual(0);

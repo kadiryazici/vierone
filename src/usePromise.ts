@@ -1,6 +1,6 @@
 /**
  * @description a promise wrapper for not being in hell of trycatch blocks.
- * @returns Array of 2 children. First one is data, second one is error. Both of them cannot be Truthy at the same time.
+ * @returns `Array` of 2 children. First one is data, second one is error. Both of them cannot be `Truthy` at the same time.
  * @example
  * ```typescript
  * const [data, error] = usePromise(fetch("https://url.com/get/data"));
