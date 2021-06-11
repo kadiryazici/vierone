@@ -1,0 +1,29 @@
+{
+   "name": "vierone",
+   "version": "0.1.1",
+   "description": "Utility functions I use in my projects often",
+   "main": "dist/cjs/index.js",
+   "module": "dist/esm/index.js",
+   "types": "./dist/types/index.d.ts",
+   "author": "Kadir Yazıcı",
+   "license": "MIT",
+   "scripts": {
+      "build:all": "pnpm run build:cjs && pnpm run build:esm",
+      "build:cjs": "tsc --project tsconfig.json ",
+      "build:esm": "tsc --project tsconfig-esm.json",
+      "test": "jest"
+   },
+   "devDependencies": {
+      "@types/jest": "^26.0.23",
+      "@types/node": "^15.12.2",
+      "jest": "^27.0.4",
+      "ts-jest": "^27.0.3",
+      "typescript": "^4.3.2"
+   },
+   "exports": {
+      ".": {
+         "import": "./dist/esm/index.js",
+         "require": "./dist/cjs/index.js"
+      }
+   }
+}

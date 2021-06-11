@@ -1,0 +1,10 @@
+node_modules
+src
+tests
+.gittignore
+.prettierrc
+jest.config.js
+pnpm-lock.yaml
+tsconfig-base.json
+tsconfig-esm.json
+tsconfig.json
