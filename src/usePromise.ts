@@ -13,11 +13,11 @@
  */
 export async function usePromise<T>(
    promise: Promise<T>
-): Promise<[T, null] | [null, Error]> {
+): Promise<[T, null] | [null, any]> {
    try {
       const data = await promise;
       return [data, null];
    } catch (error) {
-      return [null, new Error(error)];
+      return [null, error];
    }
 }
