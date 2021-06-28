@@ -11,4 +11,4 @@
  * doSomething.With.Data(data);
  * ```
  */
-export declare function usePromise<T>(promise: Promise<T>): Promise<[T, null] | [null, Error]>;
+export declare function usePromise<T>(promise: Promise<T>): Promise<[T, null] | [null, any]>;

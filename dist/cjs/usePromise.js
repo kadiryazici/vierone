@@ -30,7 +30,7 @@ function usePromise(promise) {
             return [data, null];
         }
         catch (error) {
-            return [null, new Error(error)];
+            return [null, error];
         }
     });
 }
