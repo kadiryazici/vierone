@@ -1,6 +1,6 @@
 {
    "name": "vierone",
-   "version": "0.3.0",
+   "version": "0.3.3",
    "description": "Utility functions I use in my projects often",
    "main": "dist/cjs/index.js",
    "module": "dist/esm/index.js",
